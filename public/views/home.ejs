@@ -1,0 +1,74 @@
+
+<link rel="stylesheet" href="/css/main.css">
+<body>
+  <div class="align-items-center" id = "Hero">
+ 
+    <div class="col-lg-6">
+      <hr>
+      <h1  id="hero-title">YOHORA</h1>
+      <p id="hero-desc">
+        Simple image upload onto mongoDB and front-page using GridFS & Mutler
+      </p>
+    </div>
+  </div>
+
+
+  <% articles.forEach(articles => { %>
+
+
+    <div class="container">
+      <div class="row">
+
+
+      <div class="col-lg-3 mb-0">
+        <div class="card bg-dark">
+          <a href="#">
+            <img src = "<%=articles.image%>"class="card-img-top" src="" alt="">
+          </a>
+            <div class="card-body">
+              <a class = "card-link"  href="#">
+                <h5 class="card-title"><%=articles.title%></h5>
+              </a>
+              <a class = "card-link" href="#">
+                <p class="card-text"> <%=articles.snippet%></p>
+              </a>
+                <p class="card-text"> <%=articles.createdAt.slice(0,15)%></p>
+            
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-lg-3 mb-0">
+      <div class="card bg-dark">
+        <a href="#">
+          <img src = "<%=articles.image%>"class="card-img-top" src="" alt="">
+        </a>
+          <div class="card-body">
+            <a class = "card-link"  href="#">
+              <h5 class="card-title"><%=articles.title%></h5>
+            </a>
+            <a class = "card-link" href="#">
+              <p class="card-text"> <%=articles.snippet%></p>
+            </a>
+              <p class="card-text"> <%=articles.createdAt.slice(0,15)%></p>
+          
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+  <% }) %>
+
+

@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+body { 
+  background-color: rgb(33,37,41);
+ 
+}
+
+.container-xxl { 
+  max-width: 80rem;
+  background-color: rgb(17, 19, 21);
+
+}
+
+#nav{ 
+
+  color: rgb(186, 153, 92);
+  background-color: rgb(17, 19, 21);
+  align-items: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding-bottom: 3rem;
+
+}
+
+footer { 
+  width: 100%;
+  background-color: rgb(17, 19, 21);
+  
+
+}
+
