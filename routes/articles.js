@@ -1,19 +1,35 @@
+
 const express = require('express') 
 const router = express.Router()  /** allows to create views through router */
+const Article = require('../models/articleModel');
+const mongoose = require('mongoose'); // for database
 
 
-router.get('/', (req, res) => {
-    const articles = [{
-    image: '/images/pepe.jpg',
-    title: 'Title',
-    snippet: 'lorem ipsum dolor sit amet, consectetur adipiscing',
-    createdAt: Date(),
-  }]
-  res.render('home', {articles: articles})
-});
+router.get('/new', (req, res, next) => {
+  res.render('articles/new', {title: "Yohora | Create"})
 
-router.get('/post', (req, res, next) => {
-  res.render('post', {title: "Yohora | Create"})
 }); 
 
+
+
+router.post('/new', (req, res,) => {
+  
+})
+
+
+
 module.exports = router;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
